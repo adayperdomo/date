@@ -80,4 +80,4 @@ class Date:
         return self.get_delta_days() > other.get_delta_days()
 
     def __eq__(self, other) -> bool:
-        ...
+        return self.get_delta_days() == other.get_delta_days()
