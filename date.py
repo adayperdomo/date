@@ -47,7 +47,8 @@ class Date:
     @property
     def weekday(self) -> int:
         '''Día de la semana de la fecha (0 para domingo, ..., 6 para sábado).'''
-        ...
+        semana_fecha_2_4_2024 = self.get_delta_days()
+        return (semana_fecha_2_4_2024 + 1) % 7
 
     @property
     def is_weekend(self) -> bool:
