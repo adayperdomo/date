@@ -15,7 +15,14 @@ class Date:
 
     @staticmethod
     def is_leap_year(year: int) -> bool:
-        ...
+        resultado = False
+        if year % 4 == 0 and year % 100 != 0:
+            resultado = True
+        elif year % 400 == 0:
+            resultado == True
+
+        print(__name__) 
+        return resultado
 
     @staticmethod
     def days_in_month(month: int, year: int) -> int:
